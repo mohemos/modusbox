@@ -19,6 +19,7 @@ npm run prod
 
 //using docker
 docker build -t modusbox ./
+docker run -p 4040:4040 modusbox
 ```
 ##.env file sample
 ```
