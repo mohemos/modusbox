@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "7a55e922-991b-455e-bf08-a04bc88ea4f3",
+		"name": "modusbox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "stock",
+			"item": [
+				{
+					"name": "tickers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/stocks/tickers?symbolFilter=GO&limit=10",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"stocks",
+								"tickers"
+							],
+							"query": [
+								{
+									"key": "symbolFilter",
+									"value": "GO"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						},
+						"description": "List all the stock tickers"
+					},
+					"response": []
+				},
+				{
+					"name": "price history",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/stocks/history/AAPL?monthsAgo=1",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"stocks",
+								"history",
+								"AAPL"
+							],
+							"query": [
+								{
+									"key": "daysAgo",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "weeksAgo",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "monthsAgo",
+									"value": "1"
+								},
+								{
+									"key": "yearsAgo",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "fromDate",
+									"value": "2020-01-10",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "2020-02-11",
+									"disabled": true
+								}
+							]
+						},
+						"description": "List all the stock tickers"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "company",
+			"item": [
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/companies/profile/AAPL",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"companies",
+								"profile",
+								"AAPL"
+							]
+						},
+						"description": "List all the stock tickers"
+					},
+					"response": []
+				},
+				{
+					"name": "recommended trend",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/companies/recommended-trend/AAPL",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"companies",
+								"recommended-trend",
+								"AAPL"
+							]
+						},
+						"description": "List all the stock tickers"
+					},
+					"response": []
+				},
+				{
+					"name": "earnings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/companies/earnings/AAPL",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"companies",
+								"earnings",
+								"AAPL"
+							]
+						},
+						"description": "List all the stock tickers"
+					},
+					"response": []
+				},
+				{
+					"name": "statistics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/companies/statistics/AAPL",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"companies",
+								"statistics",
+								"AAPL"
+							]
+						},
+						"description": "List all the stock tickers"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

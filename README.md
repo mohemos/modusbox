@@ -31,6 +31,11 @@ INTRINIO_API_KEY=
 ALPHA_VANTAGE_API_KEY=
 FINANCIAL_MODEL_API_URL=
 ```
+### POSTMAN COLLECTION
+Kindly import the link below to your postman client application
+```
+https://www.getpostman.com/collections/e54de785a07d0fb7885c
+```
 
 ## Test
 Test is written for only room category 
