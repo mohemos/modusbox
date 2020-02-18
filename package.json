@@ -1,0 +1,32 @@
+{
+  "name": "modusbox",
+  "version": "1.0.0",
+  "description": "A dockerised node.js rest service that returns stock ticker prices from the stock exchange of your choice.",
+  "main": "index.js",
+  "repository": "https://github.com/mohemos/modusbox.git",
+  "author": "Moses Peter",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon -r dotenv/config index.js",
+    "prod": "node -r dotenv/config index.js",
+    "kill": "kill $(lsof -t -i:2001)",
+    "test": "jest",
+    "format": "prettier --single-quote --print-width 80 --trailing-comma es5 --write \"app/**/*.js\""
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-validation": "^1.0.3",
+    "intrinio-sdk": "^5.1.0",
+    "iyasunday": "^1.0.45",
+    "joi": "^14.3.1",
+    "yahoo-finance": "^0.3.6"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
