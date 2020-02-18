@@ -46,8 +46,8 @@ npm run test
     - Filter by symbol
     - Limit returned result
 - Show company stock price history 
-    - show from date to date
-    - show by number of days, weeks, months and years
+    - show history based on provided date range
+    - show history by number of days, weeks, months and years specified by user
 - Show company detailed profile
 - Show company recommended trend
 - Show company earnings
